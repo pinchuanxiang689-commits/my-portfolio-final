@@ -9,7 +9,7 @@ const particleCount = 50; // パーティクル数を減らして軽量化
 // ===================================
 document.addEventListener('DOMContentLoaded', function() {
     // 初期化関数を実行
-    initParticles();
+    // initParticles(); // パーティクル無効化
     initScrollAnimations();
     initNavbar();
     initTypingEffect();
@@ -477,9 +477,9 @@ function showNotification(message, type = 'info') {
 }
 
 // ===================================
-// マウス追従エフェクト（デスクトップのみ）
+// マウス追従エフェクト（無効化）
 // ===================================
-// タッチデバイスではマウスエフェクトを無効化
+/*
 if (!('ontouchstart' in window)) {
     document.addEventListener('mousemove', function(e) {
         // カーソル位置に小さな光のエフェクトを作成
@@ -513,6 +513,7 @@ if (!('ontouchstart' in window)) {
         }, 100);
     });
 }
+*/
 
 // ===================================
 // ページ読み込み時のアニメーション
